@@ -1,6 +1,6 @@
-const average = require("./es.js");
+const isPalindrome = require("./es.js");
 
-test("La funzione 'average' calcola la media di un array di numeri", () => {
-  const result = average([2, 4, 6, 8, 10]);
-  expect(result).toBe(6);
+test("La funzione isPalindrome verifica se una stringa è un palindromo", () => {
+  expect(isPalindrome("anna")).toBe(true);
+  expect(isPalindrome("ciao")).toBe(false);
 });
