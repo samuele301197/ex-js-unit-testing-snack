@@ -1,5 +1,9 @@
-function somma(x, y) {
-  return x + y;
+function getInitials(fullName) {
+  return fullName
+    .split(" ")
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase();
 }
 
-module.exports = somma;
+module.exports = getInitials;
