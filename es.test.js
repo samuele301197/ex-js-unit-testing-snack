@@ -1,6 +1,8 @@
-const isPalindrome = require("./es.js");
+const createSlug = require("./es.js");
 
-test("La funzione isPalindrome verifica se una stringa è un palindromo", () => {
-  expect(isPalindrome("anna")).toBe(true);
-  expect(isPalindrome("ciao")).toBe(false);
+test("La funzione createSlug lancia un errore se il titolo è vuoto o non valido", () => {
+  expect(() => createSlug("")).toThrow("Titolo non valido");
+  expect(() => createSlug("   ")).toThrow("Titolo non valido");
+  expect(() => createSlug(null)).toThrow("Titolo non valido");
+  expect(() => createSlug(123)).toThrow("Titolo non valido");
 });
