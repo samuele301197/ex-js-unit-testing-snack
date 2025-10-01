@@ -1,5 +1,8 @@
-function createSlug(text) {
-  return text.toLowerCase().trim().replace(/\s+/g, "-");
+function average(array) {
+  const somma = array.reduce((acc, curr) => acc + curr, 0);
+  const media = somma / array.length;
+  return media;
 }
 
-module.exports = createSlug;
+average([2, 4, 6, 8, 10]);
+module.exports = average;
