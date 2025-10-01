@@ -1,6 +1,6 @@
-const getInitials = require("./es.js");
+const createSlug = require("./es.js");
 
-test("La funzione 'getInitials' restituisce le iniziali di un nome completo", () => {
-  const result = getInitials("Samuele Parisi");
-  expect(result).toBe("SP");
+test("La funzione 'createSlug' restituisce una stringa in lowercase", () => {
+  const result = createSlug("BOOLEAN");
+  expect(result).toBe("boolean");
 });

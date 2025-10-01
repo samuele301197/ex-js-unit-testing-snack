@@ -1,9 +1,5 @@
-function getInitials(fullName) {
-  return fullName
-    .split(" ")
-    .map((word) => word[0])
-    .join("")
-    .toUpperCase();
+function createSlug(str) {
+  return str.toLowerCase();
 }
 
-module.exports = getInitials;
+module.exports = createSlug;
